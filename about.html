@@ -7,28 +7,27 @@
   <link rel="stylesheet" href="style.css">
   <style>
     header {
-      text-align: center;
-      margin: 0;
-      padding: 20px 0; /* space inside header */
       background-image: url("https://statemag.state.gov/wp-content/uploads/2022/07/0822POM.jpg");
-      background-size: cover;      /* make it fill the header */
-      background-position: center; /* keep flags centered */
-      height: 180px;               /* adjust to make header smaller */
-      color: white;                /* text color on top of image */
+      background-size: cover;       /* make image cover the whole header */
+      background-position: center;  /* center the flags */
+      height: 180px;                /* adjust the height */
+      text-align: center;
+      color: white;                 /* text visible on top */
       display: flex;
       flex-direction: column;
-      justify-content: center;     /* center text vertically */
+      justify-content: center;
     }
 
+    header h1, header nav {
+      margin: 0;
+      padding: 5px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://statemag.state.gov/wp-content/uploads/2022/07/0822POM.jpg">
- 
-  <header>
     <h1>About the Authors</h1>
-  
+    
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -40,7 +39,6 @@
         <li><a href="chris.html">Chris's Blog</a></li>
       </ul>
     </nav>
-  
   </header>
 
   <div class="container">
