@@ -19,7 +19,7 @@
       object-position: center 30%;
       display: block;
     }
-    /* New larger header above navigation */
+    /* Larger main header */
     header h1.main-title {
       text-align: center;
       font-size: 3rem;
@@ -27,15 +27,6 @@
       background: #0a1a2f;
       margin: 0;
       padding: 1rem 0;
-    }
-    header h1.nav-title {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      text-align: center;
-      padding: 1rem;
-      background: rgba(10,26,47,0.8);
-      color: #fff;
     }
     nav ul {
       list-style: none;
@@ -54,6 +45,8 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
+      padding: 0.75rem 0;
+      display: block;
     }
     nav ul li a:hover {
       color: #c62828;
@@ -62,29 +55,29 @@
       max-width: 1000px;
       margin: auto;
       padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    section {
-      margin: 30px 0;
-      padding: 25px;
+    .author-card {
       background: #fff;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
     }
-    section h2 {
+    .author-card h3 {
       color: #0a1a2f;
-      border-left: 5px solid #c62828;
-      padding-left: 10px;
-    }
-    article {
-      margin-bottom: 20px;
-    }
-    article h3 {
       margin-bottom: 10px;
-      font-size: 1.3rem;
-      color: #0a1a2f;
+      font-size: 1.5rem;
     }
-    article p {
-      margin: 0 0 10px;
+    .author-card p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
     }
     footer {
       background: #0a1a2f;
@@ -113,16 +106,29 @@
         <li><a href="chris.html">Chris's Blog</a></li>
       </ul>
     </nav>
-
-    <h1 class="nav-title">About the Authors</h1>
   </header>
 
   <div class="container">
-    <article><h3>Kaylin</h3><p>Placeholder bio text for Kaylin. Add details here.</p></article>
-    <article><h3>Noah</h3><p>Placeholder bio text for Noah. Add details here.</p></article>
-    <article><h3>Jordan</h3><p>Placeholder bio text for Jordan. Add details here.</p></article>
-    <article><h3>Derek</h3><p>Placeholder bio text for Derek. Add details here.</p></article>
-    <article><h3>Chris</h3><p>Placeholder bio text for Chris. Add details here.</p></article>
+    <div class="author-card">
+      <h3>Kaylin</h3>
+      <p>words</p>
+    </div>
+    <div class="author-card">
+      <h3>Noah</h3>
+      <p>words</p>
+    </div>
+    <div class="author-card">
+      <h3>Jordan</h3>
+      <p>words</p>
+    </div>
+    <div class="author-card">
+      <h3>Derek</h3>
+      <p>words</p>
+    </div>
+    <div class="author-card">
+      <h3>Chris </h3>
+      <p>words</p>
+    </div>
   </div>
 
   <footer>
