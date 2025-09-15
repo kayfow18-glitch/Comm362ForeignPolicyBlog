@@ -19,7 +19,7 @@
     header {
       position: relative;
       width: 100%;
-      height: 350px;
+      height: 350px; /* adjustable header height */
       overflow: hidden;
     }
 
@@ -27,21 +27,21 @@
     header img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center 15%; /* moves image up */
+      object-fit: cover;        /* scale image without distortion */
+      object-position: center 20%; /* shift image up slightly */
       display: block;
     }
 
     /* Header title */
     header h1 {
       position: absolute;
-      bottom: 20px; /* slightly above bottom */
+      bottom: 0;
       width: 100%;
       margin: 0;
       font-size: 2.5rem;
       text-align: center;
       padding: 1rem 0;
-      background: #0a1a2f; /* solid background */
+      background: #0a1a2f; /* solid blue background */
       color: #fff;
       z-index: 2;
     }
@@ -60,7 +60,7 @@
       display: flex;
       justify-content: center;
       margin: 0;
-      background: rgba(10,26,47,0.9); /* semi-transparent nav bar */
+      background: #0a1a2f; /* solid blue nav bar */
       flex-wrap: wrap;
     }
 
@@ -119,9 +119,9 @@
 </head>
 <body>
   <header>
-    <img src="https://www.aa.com.tr/uploads/userFiles/ff2e160e-1140-4ece-bd48-ecd8a2ca0218/20180529_2_30610975_34151905.jpg" 
-         alt="NATO Headquarters with Flags">
-    
+    <img src="https://www.politico.eu/cdn-cgi/image/width=1160,height=745,fit=crop,quality=80,onerror=redirect,format=auto/wp-content/uploads/2018/08/GettyImages-948680906-e1535630707396.jpg" 
+         alt="Header Image">
+
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
