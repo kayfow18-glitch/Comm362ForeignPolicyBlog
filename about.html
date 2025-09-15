@@ -8,19 +8,36 @@
   <style>
     header {
       background-image: url("https://statemag.state.gov/wp-content/uploads/2022/07/0822POM.jpg");
-      background-size: cover;       /* make image cover the whole header */
+      background-size: cover;       /* fill the header */
       background-position: center;  /* center the flags */
-      height: 180px;                /* adjust the height */
+      height: 100px;                /* smaller height like the right screenshot */
       text-align: center;
-      color: white;                 /* text visible on top */
+      color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 0;
+      margin: 0;
     }
 
-    header h1, header nav {
+    header h1 {
       margin: 0;
-      padding: 5px;
+      font-size: 28px; /* adjust text size */
+    }
+
+    header nav ul {
+      margin: 5px 0 0 0;  /* small gap below title */
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
