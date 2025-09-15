@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .header-image {
-      width: 100%;          /* fills header width */
-      height: 300px;        /* keeps original proportions */
-      object-fit: cover;   
+      width: 100%;
+      max-height: 320px; /* slightly taller for better visibility */
+      object-fit: cover;
+      object-position: center 30%; /* shift image further down to reveal more flags */
       display: block;
     }
 
@@ -25,8 +26,7 @@
 </head>
 <body>
   <header>
-    <img src="https://live.staticflickr.com/813/27029506878_9cbed176f6_h.jpg"
-         class="header-image">
+    <img src="">
 
     <h1>About the Authors</h1>
   
