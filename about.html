@@ -12,48 +12,53 @@
       background-color: #f9f9f9;
       color: #222;
     }
+
     header img {
       width: 100%;
       max-height: 350px;
       object-fit: cover;
-      object-position: center 10%; /* shifted up to show NATO seating */
+      object-position: center 100%; /* shift image up to show NATO seating */
       display: block;
     }
 
-    /* Gray overlay header block */
-    .header-overlay {
-      background: rgba(10,26,47,0.8); /* grayish overlay */
+    /* Semi-transparent gray block behind "About the Authors" */
+    .header-gray {
+      background: rgba(10,26,47,0.8); /* dark gray overlay */
       color: #fff;
       text-align: center;
       padding: 1rem 0;
     }
-    .header-overlay h1 {
-      margin: 0 0 0.5rem 0;
+    .header-gray h1 {
+      margin: 0;
       font-size: 3rem;
     }
-    .header-overlay nav ul {
+
+    /* Navigation bar */
+    nav ul {
+      list-style: none;
+      padding: 0;
       display: flex;
       justify-content: center;
-      list-style: none;
       margin: 0;
-      padding: 0;
+      background: #0a1a2f; /* dark blue nav background */
       flex-wrap: wrap;
     }
-    .header-overlay nav ul li {
+    nav ul li {
       margin: 0 15px;
     }
-    .header-overlay nav ul li a {
-      color: #0a1a2f; /* changed to dark blue */
+    nav ul li a {
+      color: #fff; /* white links */
       text-decoration: none;
       font-weight: bold;
       padding: 0.75rem 0;
       display: block;
       transition: color 0.3s;
     }
-    .header-overlay nav ul li a:hover {
+    nav ul li a:hover {
       color: #c62828;
     }
 
+    /* Container for author cards */
     .container {
       max-width: 1000px;
       margin: auto;
@@ -82,6 +87,7 @@
       font-size: 1rem;
       line-height: 1.6;
     }
+
     footer {
       background: #0a1a2f;
       color: #ddd;
@@ -94,23 +100,25 @@
 </head>
 <body>
   <header>
-    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/mco/IGDMJLWKVFBFHKE4T5IAH4EYRY.jpg" 
+    <img src="https://www.politico.eu/cdn-cgi/image/width=1160,height=745,fit=crop,quality=80,onerror=redirect,format=auto/wp-content/uploads/2018/08/GettyImages-948680906-e1535630707396.jpg" 
          alt="Foreign Policy Blog Header">
 
-    <div class="header-overlay">
+    <!-- Semi-transparent gray block -->
+    <div class="header-gray">
       <h1>About the Authors</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About the Authors</a></li>
-          <li><a href="kaylin.html">Kaylin's Blog</a></li>
-          <li><a href="noah.html">Noah's Blog</a></li>
-          <li><a href="jordan.html">Jordan's Blog</a></li>
-          <li><a href="derek.html">Derek's Blog</a></li>
-          <li><a href="chris.html">Chris's Blog</a></li>
-        </ul>
-      </nav>
     </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About the Authors</a></li>
+        <li><a href="kaylin.html">Kaylin's Blog</a></li>
+        <li><a href="noah.html">Noah's Blog</a></li>
+        <li><a href="jordan.html">Jordan's Blog</a></li>
+        <li><a href="derek.html">Derek's Blog</a></li>
+        <li><a href="chris.html">Chris's Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="container">
@@ -141,3 +149,4 @@
   </footer>
 </body>
 </html>
+
