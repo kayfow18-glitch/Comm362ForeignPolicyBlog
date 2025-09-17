@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post One - Kaylin's Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kaylin's Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kaylin.html">Kaylin's Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Post One</h2>
+    <p>This is the full content of Post One. You can write a longer blog entry here with analysis, commentary, or reflections.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Comm 362 Foreign Policy Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
