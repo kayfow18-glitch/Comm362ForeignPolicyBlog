@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaylin's Blog - Comm 362 Foreign Policy Blog</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
@@ -14,13 +13,24 @@
       color: #222;
     }
 
+    /* Header image */
+    header img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+
     header h1 {
       margin: 0;
       font-size: 2.2rem;
       text-align: center;
       padding: 1rem;
-      background: #0a1a2f;
+      background: rgba(10,26,47,0.8); /* dark overlay for contrast */
       color: #fff;
+      position: relative;
+      top: -60px; /* moves the h1 up onto the image */
     }
 
     nav ul {
@@ -97,6 +107,7 @@
 </head>
 <body>
   <header>
+    <img src="https://commonslibrary.parliament.uk/content/uploads/2019/05/European-Parliament-flags.png" alt="European Parliament Flags">
     <h1>Kaylin's Blog</h1>
     
     <nav>
