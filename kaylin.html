@@ -24,13 +24,12 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
       text-align: center;
       padding: 1rem;
       background: rgba(10,26,47,0.8); /* dark overlay for contrast */
       color: #fff;
-      position: relative;
-      top: -60px; /* moves the h1 up onto the image */
     }
 
     nav ul {
@@ -58,41 +57,23 @@
       color: #c62828;
     }
 
-    /* Shared container style */
-    .container, .intro-container {
+    /* Container box like the author cards */
+    .container {
       max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 30px auto;
+      padding: 25px;
       background: #fff;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    /* First container (centered text) */
-    .intro-container {
       text-align: center;
     }
 
-    /* Other containers (left aligned) */
-    .container {
-      text-align: left;
-    }
-
-    .container h2, .intro-container h2 {
+    .container h2 {
       color: #0a1a2f;
       border-left: 5px solid #c62828;
       padding-left: 10px;
+      text-align: center;
       margin-top: 0;
-    }
-
-    /* Style post title links */
-    .container h2 a {
-      color: #0a1a2f;
-      text-decoration: none;
-    }
-
-    .container h2 a:hover {
-      color: #c62828;
     }
 
     footer {
@@ -123,31 +104,15 @@
     </nav>
   </header>
 
-  <!-- First centered container -->
-  <div class="intro-container">
+  <div class="container">
     <h2>Welcome to Kaylin's Blog</h2>
     <p>Introduction</p>
-  </div>
-
-  <!-- Other left-aligned containers with updated links -->
-  <div class="container">
-    <h2><a href="kaylinblogpost1.html">Post One</a></h2>
-    <p>Blog 1.</p>
-  </div>
-
-  <div class="container">
-    <h2><a href="kaylinblogpost2.html">Post Two</a></h2>
-    <p>Blog 2.</p>
-  </div>
-
-  <div class="container">
-    <h2><a href="kaylinblogpost3.html">Post Three</a></h2>
-    <p>Blog 3.</p>
-  </div>
-
-  <div class="container">
-    <h2><a href="kaylinblogpost4.html">Post Four</a></h2>
-    <p>Blog 4.</p>
+    <p>
+      This blog is focused on Foreign Policy, examining the major issues that shape Global Politics today. 
+      This blog is run by five college students: Kaylin, Noah, Jordan, Derek, and Chris. 
+      Click on About the Authors to learn more about each of us! 
+      We hope that you'll stick around and read our stories on this blog, and hopefully learn something about Foreign Policy through them.
+    </p>
   </div>
 
   <footer>
