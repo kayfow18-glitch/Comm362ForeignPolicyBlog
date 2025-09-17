@@ -48,18 +48,27 @@
       color: #c62828;
     }
 
-    /* Container style from second code */
-    .container {
+    /* Shared container style */
+    .container, .intro-container {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
       background: #fff;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center; /* left aligned text */
     }
 
-    .container h2 {
+    /* First container (centered text) */
+    .intro-container {
+      text-align: center;
+    }
+
+    /* Other containers (left aligned) */
+    .container {
+      text-align: left;
+    }
+
+    .container h2, .intro-container h2 {
       color: #0a1a2f;
       border-left: 5px solid #c62828;
       padding-left: 10px;
@@ -93,25 +102,31 @@
     </nav>
   </header>
 
-  <!-- Four left-aligned containers -->
-  <div class="container">
+  <!-- First centered container -->
+  <div class="intro-container">
     <h2>Welcome to Kaylin's Blog</h2>
     <p>This is the introduction post, sharing what my blog will be about and why foreign policy matters.</p>
   </div>
 
+  <!-- Other left-aligned containers -->
   <div class="container">
     <h2>Post One</h2>
-    <p>Here’s where the first blog entry will go. It could cover a current issue in global politics or a personal reflection on class readings.</p>
+    <p>Blog 1.</p>
   </div>
 
   <div class="container">
     <h2>Post Two</h2>
-    <p>This container could be another blog entry or a commentary on a recent international event.</p>
+    <p>Blog 2.</p>
   </div>
 
   <div class="container">
     <h2>Post Three</h2>
-    <p>Another placeholder entry, perfect for adding more foreign policy insights, analysis, or class-related discussions.</p>
+    <p>Blog 3.</p>
+  </div>
+
+  <div class="container">
+    <h2>Post Four</h2>
+    <p>Blog 4.</p>
   </div>
 
   <footer>
