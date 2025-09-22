@@ -4,10 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah's Blog - Comm 362 Foreign Policy Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
+      background-color: #faf9f6;
+      color: #222;
+    }
+
+    /* Header image */
+    header img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center 50%;
+      display: block;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 1rem;
+      background: rgba(10,26,47,0.8); /* dark overlay for contrast */
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      background: #0a1a2f;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c62828;
+    }
+
+    /* Shared container style */
+    .container, .intro-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* First container (centered text) */
+    .intro-container {
+      text-align: center;
+    }
+
+    /* Other containers (left aligned) */
+    .container {
+      text-align: left;
+    }
+
+    .container h2, .intro-container h2 {
+      color: #0a1a2f;
+      border-left: 5px solid #c62828;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    /* Style post title links */
+    .container h2 a {
+      color: #0a1a2f;
+      text-decoration: none;
+    }
+
+    .container h2 a:hover {
+      color: #c62828;
+    }
+
+    footer {
+      background: #0a1a2f;
+      color: #ddd;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <img src="https://pctechmag.com/wp-content/uploads/2015/10/parlamento-europeo.jpg">
     <h1>Noah's Blog</h1>
     
     <nav>
@@ -21,11 +120,33 @@
         <li><a href="chris.html">Chris's Blog</a></li>
       </ul>
     </nav>
-
   </header>
 
+  <!-- First centered container -->
+  <div class="intro-container">
+    <h2>Welcome to Noah's Blog</h2>
+    <p>Words</p>
+  </div>
+
+  <!-- Other left-aligned containers with updated links -->
   <div class="container">
-    <h2>Welcome to Noah's Blog</h2><p>Placeholder post text for Noah.</p>
+    <h2>Post One</h2>
+    <p>Blog 1</p>
+  </div>
+
+  <div class="container">
+    <h2>Post Two</h2>
+    <p>Blog 2.</p>
+  </div>
+
+  <div class="container">
+    <h2>Post Three</h2>
+    <p>Blog 3.</p>
+  </div>
+
+  <div class="container">
+    <h2>Post Four</h2>
+    <p>Blog 4.</p>
   </div>
 
   <footer>
