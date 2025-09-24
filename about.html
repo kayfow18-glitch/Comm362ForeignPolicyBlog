@@ -72,7 +72,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      align-items: stretch; /* makes cards same height */
+      align-items: stretch; /* keeps all cards equal height */
     }
 
     .author-card {
@@ -80,10 +80,10 @@
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 20px;
-      flex: 1 1 300px;   /* flexible sizing */
-      max-width: 300px; /* ensures even width */
+      flex: 1 1 300px;
+      max-width: 300px;
       display: flex;
-      flex-direction: column; /* stack content vertically */
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
     }
@@ -100,12 +100,19 @@
       height: auto;
       border-radius: 6px;
       margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    /* Bigger photo for Noah */
+    .noah-img {
+      max-width: 250px; /* larger image size */
     }
 
     .author-card p {
       font-size: 1rem;
       line-height: 1.6;
       text-align: left;
+      margin-top: auto; /* balances text at the bottom */
     }
 
     footer {
@@ -146,7 +153,7 @@
 
     <div class="author-card">
       <h3>Noah</h3>
-      <img src="images/noahbiopicture.jpg" alt="Noah's Photo">
+      <img src="images/noahbiopicture.jpg" alt="Noah's Photo" class="noah-img">
       <p>Hi, I’m Noah Reed! I’m a senior studying Government and International Politics. I’m the research director of Taiwan Security Monitor, which is a research initiative at Mason. Additionally, I help out the debate team and judge at tournaments.</p>
     </div>
 
@@ -164,7 +171,7 @@
 
     <div class="author-card">
       <h3>Chris</h3>
-      <img src= ??? alt="Chris's Photo">
+      <img src="images/chrisintropic.jpg" alt="Chris's Photo">
       <p>Hello! I’m Chris!</p>
     </div>
   </div>
