@@ -94,31 +94,40 @@
       font-size: 1.5rem;
     }
 
+    /* Shared image styling */
     .author-card img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
       border-radius: 6px;
       margin-bottom: 15px;
       object-fit: cover;
+      height: auto;
     }
 
-    /* Bigger photos for Noah and Derek */
+    /* Individual image sizes */
+    .kaylin-img {
+      max-width: 200px;
+    }
+
     .noah-img {
-      width: auto !important;
-      max-width: 350px !important;
+      max-width: 300px;
+    }
+
+    .jordan-img {
+      max-width: 200px;
     }
 
     .derek-img {
-      width: auto !important;
-      max-width: 300px !important;
+      max-width: 275px;
+    }
+
+    .chris-img {
+      max-width: 200px;
     }
 
     .author-card p {
       font-size: 1rem;
       line-height: 1.6;
       text-align: left;
-      margin-top: auto; /* balances text at the bottom */
+      margin-top: auto; /* keeps text aligned at bottom */
     }
 
     footer {
@@ -153,7 +162,7 @@
   <div class="container">
     <div class="author-card">
       <h3>Kaylin</h3>
-      <img src="images/kfintropicture2" alt="Kaylin's Photo">
+      <img src="images/kfintropicture2.jpg" alt="Kaylin's Photo" class="kaylin-img">
       <p>Hello! My name is Kaylin Fowler, and I am a senior pursuing a Bachelor's degree in Government and International Politics, with a Minor in Political Communication. My areas of interest include European Politics and US-EU relations. I have worked on a Research Project for two years on EU-Russian Privatization Policy.</p>
     </div>
 
@@ -165,7 +174,7 @@
 
     <div class="author-card">
       <h3>Jordan</h3>
-      <img src="images/jordanintropic.jpg" alt="Jordan's Photo">
+      <img src="images/jordanintropic.jpg" alt="Jordan's Photo" class="jordan-img">
       <p>Hey! My name is Jordan Giles, and I am a current International Security and Law Junior. My interests are International Security and Intelligence. I am interested in either pursuing a Master's in either International Security or Public Health.</p>
     </div>
 
@@ -177,7 +186,7 @@
 
     <div class="author-card">
       <h3>Chris</h3>
-      <img src="images/chrisintropic.jpg" alt="Chris's Photo">
+      <img src="images/chrisintropic.jpg" alt="Chris's Photo" class="chris-img">
       <p>Hello! I’m Chris!</p>
     </div>
   </div>
