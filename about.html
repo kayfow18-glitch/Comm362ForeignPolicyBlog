@@ -72,7 +72,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      align-items: flex-start; /* added to prevent equal height stretching */
+      align-items: stretch; /* makes cards same height */
     }
 
     .author-card {
@@ -80,9 +80,12 @@
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 20px;
-      flex: 0 1 300px;
-      max-width: 400px;
-      text-align: center;
+      flex: 1 1 300px;   /* flexible sizing */
+      max-width: 300px; /* ensures even width */
+      display: flex;
+      flex-direction: column; /* stack content vertically */
+      justify-content: flex-start;
+      align-items: center;
     }
 
     .author-card h3 {
@@ -93,16 +96,16 @@
 
     .author-card img {
       width: 100%;
-      max-width: 250px;
+      max-width: 200px;
       height: auto;
       border-radius: 6px;
       margin-bottom: 15px;
     }
 
     .author-card p {
-      margin: 0;
       font-size: 1rem;
       line-height: 1.6;
+      text-align: left;
     }
 
     footer {
@@ -137,31 +140,32 @@
   <div class="container">
     <div class="author-card">
       <h3>Kaylin</h3>
-      <img src="images/kfintropicture2" alt="Kaylin's Photo" style="width:100%; max-width:250px; border-radius:6px; margin-bottom:15px;">
-      <p>Hello! My name is Kaylin Fowler, and I am a senior pursuing a Bachelor's degree in Government and International Politics, with a Minor in Political Communication. My areas of interest include "EU"ropean Politics and US-EU relations. I have worked on a Research Project for two years on EU-Russian Privatization Policy.</p>
+      <img src="images/kfintropicture2.jpg" alt="Kaylin's Photo">
+      <p>Hello! My name is Kaylin Fowler, and I am a senior pursuing a Bachelor's degree in Government and International Politics, with a Minor in Political Communication. My areas of interest include European Politics and US-EU relations. I have worked on a Research Project for two years on EU-Russian Privatization Policy.</p>
     </div>
 
     <div class="author-card">
       <h3>Noah</h3>
-       <img src="images/noahbiopicture.jpg" alt="Noah's Photo" style="width:100%; max-width:250px; border-radius:6px; margin-bottom:15px;">
+      <img src="images/noahbiopicture.jpg" alt="Noah's Photo">
       <p>Hi, I’m Noah Reed! I’m a senior studying Government and International Politics. I’m the research director of Taiwan Security Monitor, which is a research initiative at Mason. Additionally, I help out the debate team and judge at tournaments.</p>
     </div>
 
     <div class="author-card">
       <h3>Jordan</h3>
-      <img src="images/jordanintropic.jpg" alt="Jordan's Photo" style="width:100%; max-width:250px; border-radius:6px; margin-bottom:15px;">
+      <img src="images/jordanintropic.jpg" alt="Jordan's Photo">
       <p>Hey! My name is Jordan Giles, and I am a current International Security and Law Junior. My interests are International Security and Intelligence. I am interested in either pursuing a Master's in either International Security or Public Health.</p>
     </div>
 
     <div class="author-card">
       <h3>Derek</h3>
-      <img src="images/derekintropicture.jpeg" alt="Derek's Photo" style="width:100%; max-width:250px; border-radius:6px; margin-bottom:15px;">
+      <img src="images/derekintropicture.jpeg" alt="Derek's Photo">
       <p>Hello! I’m Derek Borrayo. Currently a Junior at George Mason University studying Communications. I transferred from Northern Virginia Community College, where I learned about Cinema and Filmmaking.</p>
     </div>
 
     <div class="author-card">
       <h3>Chris</h3>
-      <p>.</p>
+      <img src= ??? alt="Chris's Photo">
+      <p>Hello! I’m Chris. My bio is coming soon — stay tuned!</p>
     </div>
   </div>
 
@@ -170,3 +174,4 @@
   </footer>
 </body>
 </html>
+
