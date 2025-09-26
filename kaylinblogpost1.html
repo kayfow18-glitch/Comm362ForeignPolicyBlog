@@ -78,33 +78,45 @@
       color: #a61d1d;
     }
 
-    .sources {
-      clear: both;
-      margin-top: 40px;
-      padding: 15px;
-      background: #f4f4f4;
-      border-left: 5px solid #0a1a2f;
-      font-size: 0.9rem;
+    .references {
+  clear: both;
+  margin-top: 40px;
+  padding: 20px 25px;
+  background: #f4f4f4;
+  border-left: 5px solid #0a1a2f;
+  font-size: 0.9rem;
+  border-radius: 6px;           /* rounded edges */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.references h3 {
+  margin-top: 0;
+  color: #0a1a2f;
+  font-size: 1.3rem;            /* bigger than default */
+  font-weight: bold;            /* bolder */
+  border-bottom: 2px solid #c62828;
+  padding-bottom: 5px;
+}
+
+.references ul {
+  padding-left: 0;
+  list-style: none;             /* remove default bullets */
+}
+
+.references ul li {
+  margin-bottom: 15px;
+  background: #fff;             
+  padding: 10px 15px;          /* padding inside box */
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  text-indent: 0;              /* remove negative indent for safer wrapping */
+  word-wrap: break-word;       /* ensures long URLs break */
+}
+
+
     }
 
-    .sources h3 {
-      margin-top: 0;
-      color: #0a1a2f;
-    }
-
-    .sources ul li {
-      margin-bottom: 15px;
-      padding-left: 1.5em;   /* total indent */
-      text-indent: -1.5em;   /* hanging indent */
-    }
-
-    .sources a {
-      color: #c62828;
-      text-decoration: none;
-      font-weight: normal;
-    }
-
-    .sources a:hover {
+    .references a:hover {
       text-decoration: underline;
     }
 
@@ -191,7 +203,7 @@ It is essential to recognize that the EU’s shift away from staunch support for
 Furthermore, the EU must impose an arms embargo on Israel. In 2023, Germany supplied 30% of arms to Israel, meaning that the EU supplies about 1/3rd of Israel’s arms supplies (de la Baume, Euronews, 2025). An arms embargo would prevent European Union technology from committing war crimes and align with the idea that it supports all forms of human rights. These steps, taken together, would transform the EU’s current public policy from complacency to meaningful action.
     </p>
 
-    <div class="References">
+    <div class="references">
   <h3>References</h3>
   <ul>
     <li>Ben-Gershom, A. (photographer). (2025, May 10). Israeli Prime Minister Benjamin Netanyahu hosts then-German opposition leader Friedrich Merz in Jerusalem, March 21, 2023 [Photograph]. The German chancellor speaks to Netanyahu first. <em>JNS</em>. <a href="https://www.jns.org/german-chancellor-speaks-to-netanyahu-first/">Link</a></li>
