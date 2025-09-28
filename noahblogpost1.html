@@ -78,33 +78,55 @@
       color: #a61d1d;
     }
 
-    .sources {
-      clear: both;
-      margin-top: 40px;
-      padding: 15px;
-      background: #f4f4f4;
-      border-left: 5px solid #0a1a2f;
-      font-size: 0.9rem;
-    }
+    .references {
+  clear: both;
+  margin-top: 40px;
+  padding: 20px 25px;
+  background: #f4f4f4;
+  border-left: 5px solid #0a1a2f;
+  font-size: 0.9rem;
+  border-radius: 6px;           /* rounded edges */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+}
 
-    .sources h3 {
-      margin-top: 0;
-      color: #0a1a2f;
-    }
+.references h3 {
+  margin-top: 0;
+  color: #0a1a2f;
+  font-size: 1.3rem;            /* bigger than default */
+  font-weight: bold;            /* bolder */
+  border-bottom: 2px solid #c62828;
+  padding-bottom: 5px;
+}
 
-    .sources ul {
-      padding-left: 20px;
-    }
+.references ul {
+  padding-left: 0;
+  list-style: none;             /* remove default bullets */
+}
 
-    .sources a {
-      color: #c62828;
-      text-decoration: none;
-      font-weight: normal;
-    }
+.references ul li {
+  margin-bottom: 15px;
+  background: #fff;             
+  padding: 10px 15px;          /* padding inside box */
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  text-indent: 0;              /* remove negative indent for safer wrapping */
+  word-wrap: break-word;       /* ensures long URLs break */
+}
 
-    .sources a:hover {
-      text-decoration: underline;
-    }
+.references a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #0a1a2f;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+
 
     footer {
       background: #0a1a2f;
@@ -138,44 +160,43 @@
   </header>
 
   <div class="post-container">
-    <h2>Post Title</h2>
+    <h2>Title</h2>
 
-    <p style="text-align: center;"><em>Date</em></p>
+    <p style="text-align: center;"><em>September 28th, 2025</em></p>
 
     <figure style="max-width: 80%; margin: 0 auto; text-align: center;">
-      <img src="images/sample.jpg" alt="Main image">
-      <figcaption>Main image caption.</figcaption>
+      <img src="images/jvp logo.jpg" alt="Main image">
+      <figcaption> An image depicting the logo of the JVP</figcaption>
     </figure>
 
     <p>
-      <!-- Content goes here -->
+      J  
     </p>
 
     <figure class="img-left">
-      <img src="images/sample-left.jpg" alt="Left aligned image">
-      <figcaption>Left image caption.</figcaption>
+      <img src="images/jvp.jpg" alt="Left aligned image">
+      <figcaption>JVP group members gather in protest around the White House</figcaption>
     </figure>
 
     <p>
-      <!-- Content goes here -->
+      A
     </p>
 
     <figure class="img-right">
-      <img src="images/sample-right.jpg" alt="Right aligned image">
-      <figcaption>Right image caption.</figcaption>
+      <img src="images/jvpnycprotest.jpg" alt="Right aligned image">
+      <figcaption>JVP protestors gather in New York City to fight for what they believe in</figcaption>
     </figure>
 
     <p>
-      <!-- Content goes here -->
+      J
     </p>
 
-    <div class="sources">
-      <h3>Sources</h3>
-      <ul>
-        <li><a href="#">Source 1</a></li>
-        <li><a href="#">Source 2</a></li>
-      </ul>
-    </div>
+        <div class="references">
+  <h3>References</h3>
+  <ul>
+    
+  </ul>
+</div>
 
     <a href="noah.html" class="back-button">← Back to Blog</a>
   </div>
